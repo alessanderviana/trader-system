@@ -7,14 +7,14 @@ resource "aws_security_group" "sg_trader" {
     from_port = 3389
     to_port = 3389
     protocol = "tcp"
-    cidr_blocks = ["187.20.141.156/32"]
+    cidr_blocks = ["187.20.242.241/32"]
   }
 
   ingress {
     from_port = -1
     to_port = -1
     protocol = "icmp"
-    cidr_blocks = ["187.20.141.156/32"]
+    cidr_blocks = ["187.20.242.241/32"]
   }
 
   ingress {
@@ -22,7 +22,7 @@ resource "aws_security_group" "sg_trader" {
     to_port = 22
     protocol = "tcp"
     # IP de casa (09/06/2018)
-    cidr_blocks =  ["187.20.141.156/32"]
+    cidr_blocks =  ["187.20.242.241/32"]
   }
 
   egress {

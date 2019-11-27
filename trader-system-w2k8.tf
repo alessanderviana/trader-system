@@ -10,6 +10,8 @@ resource "aws_instance" "trader-system-w2k8" {
   vpc_security_group_ids = ["${aws_security_group.sg_trader.id}",]
 
   associate_public_ip_address = true
+  get_password_data = true
+
   # user_data = "${file("./startup-script.ps1")}"
   user_data = <<EOF
 <powershell>

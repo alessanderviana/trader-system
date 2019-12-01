@@ -18,12 +18,13 @@ resource "aws_instance" "trader-system-w2k8" {
 
 mkdir c:\temp
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-iwr -Uri "${var.s3-download-file}" -OutFile C:\temp\modaltrader.exe
+iwr -Uri "${var.s3-download-file}" -OutFile C:\temp\instalador_tryd_modal.exe
 
 </powershell>
 EOF
 
   # aws --profile alessander s3 presign s3://ftp-s3-repo/modaltrader.exe
+  # aws --profile alessander s3 presign s3://ftp-s3-repo/instalador_tryd_modal.exe
 
   tags {
     Name = "Trader System"

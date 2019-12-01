@@ -24,5 +24,8 @@ variable "private_key" {
   default = "~/repositorios/terraform/alessander-tf"
 }
 
-variable "s3-download-file" {
+variable "link-installer" {
+}
+
+variable "link-config" {
 }

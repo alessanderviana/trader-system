@@ -21,6 +21,9 @@ mkdir c:\temp
 iwr -Uri "${var.link-config}" -OutFile C:\temp\tryd-config2-20191130.zip
 iwr -Uri "${var.link-installer}" -OutFile C:\temp\instalador_tryd_modal.exe
 
+New-LocalUser "alessander" -Password "P@ssw0rd" -FullName "Alessander Viana" -Description "Alessander Viana user"
+Add-LocalGroupMember -Group "Administrators" -Member "alessander"
+
 </powershell>
 EOF
 

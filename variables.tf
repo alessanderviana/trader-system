@@ -12,7 +12,7 @@ variable "vpc_id" {
 }
 
 variable "subnet_id" {
-  default = "subnet-b633e9cc"  # use2-az2 - us-east-1
+  # default = "subnet-b633e9cc"  # use2-az2 - us-east-1
   default = "subnet-a0be55e9"  # sae1-az2 - sa-east-1
 }
 
